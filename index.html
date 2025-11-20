@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SehatKita - Aplikasi Kesehatan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">SehatKita</div>
+      <nav class="nav">
+        <a href="#tentang">Tentang</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#monitor">Pantau Kesehatan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="btn primary">Masuk</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <p class="eyebrow">Transformasi Kesehatan Digital</p>
+          <h1>Kelola Kesehatan Anda Lebih Cerdas &amp; Personal</h1>
+          <p>Kombinasi informasi kesehatan, alat pantau gaya hidup, serta jadwal konsultasi dokter dalam satu aplikasi web ringan.</p>
+          <div class="hero-actions">
+            <button class="btn primary">Mulai Sekarang</button>
+            <button class="btn ghost">Pelajari Lebih Lanjut</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>50rb+</strong>
+              <span>Pasien Aktif</span>
+            </div>
+            <div>
+              <strong>120+</strong>
+              <span>Tenaga Medis</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Rating Pengguna</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Status Kesehatan Minggu Ini</h3>
+          <ul>
+            <li>
+              <span>Langkah Harian</span>
+              <strong>8.245</strong>
+              <small>Target 10.000</small>
+            </li>
+            <li>
+              <span>Jam Tidur</span>
+              <strong>7.2 Jam</strong>
+              <small>Target 8 Jam</small>
+            </li>
+            <li>
+              <span>Asupan Air</span>
+              <strong>2.1 L</strong>
+              <small>Target 2.5 L</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Mengapa SehatKita?</p>
+          <h2>Solusi kesehatan digital yang holistik</h2>
+          <p>Monitor kesehatan, pelajari tips hidup sehat, dan terhubung dengan tenaga medis profesional kapan pun dibutuhkan.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Integrasi Wearable</h3>
+            <p>Sinkronkan data dari smartwatch untuk memantau detak jantung, kalori, dan aktivitas harian secara otomatis.</p>
+          </article>
+          <article class="card">
+            <h3>Insight Personal</h3>
+            <p>Algoritma kami menganalisis kebiasaan harian untuk memberi rekomendasi nutrisi serta pola tidur yang sesuai.</p>
+          </article>
+          <article class="card">
+            <h3>Konsultasi Online</h3>
+            <p>Terhubung dengan dokter terbaik melalui video call, chat, atau telepon tanpa perlu menunggu lama di klinik.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section features">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Fitur Utama</p>
+          <h2>Fokus pada pencegahan dan pemantauan</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon">🧠</div>
+            <h3>Mindfulness</h3>
+            <p>Latihan pernapasan singkat dan sesi meditasi terpandu untuk mengelola stres.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🥗</div>
+            <h3>Rencana Nutrisi</h3>
+            <p>Menu harian seimbang berdasarkan preferensi dan kebutuhan kalori tubuh.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">💧</div>
+            <h3>Pengingat Hidrasi</h3>
+            <p>Notifikasi pintar agar asupan air tercapai sepanjang hari.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">📅</div>
+            <h3>Jadwal Cek Kesehatan</h3>
+            <p>Catatan riwayat medis untuk memudahkan pemeriksaan berkala.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="monitor" class="section monitor">
+      <div class="container monitor-grid">
+        <div class="card monitor-card">
+          <h3>Kalkulator BMI</h3>
+          <form id="bmi-form">
+            <label for="weight">Berat (kg)</label>
+            <input type="number" id="weight" min="1" step="0.1" required>
+
+            <label for="height">Tinggi (cm)</label>
+            <input type="number" id="height" min="1" step="0.1" required>
+
+            <button type="submit" class="btn primary">Hitung BMI</button>
+          </form>
+          <div class="result" id="bmi-result">Masukkan data untuk melihat hasil.</div>
+        </div>
+
+        <div class="card monitor-card">
+          <h3>Target Asupan Air</h3>
+          <form id="water-form">
+            <label for="goal-water">Target (liter)</label>
+            <input type="number" id="goal-water" min="0.5" step="0.1" value="2.5">
+
+            <label for="current-water">Sudah diminum (liter)</label>
+            <input type="number" id="current-water" min="0" step="0.1" value="1.2">
+
+            <button type="submit" class="btn secondary">Hitung Sisa</button>
+          </form>
+          <div class="result" id="water-result">Capai target harianmu!</div>
+        </div>
+
+        <div class="card monitor-card">
+          <h3>Tips Hidup Sehat</h3>
+          <p>Klik tombol di bawah untuk mendapatkan rekomendasi acak.</p>
+          <button id="tips-btn" class="btn ghost full">Dapatkan Tips</button>
+          <div class="result" id="tips-result">Jaga pola makan seimbang dan rutin bergerak.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta-content">
+        <div>
+          <h2>Terhubung dengan dokter pilihan Anda</h2>
+          <p>Tim support kami siap merekomendasikan tenaga medis terbaik sesuai kebutuhan spesifik Anda.</p>
+        </div>
+        <button class="btn primary large">Konsultasi Sekarang</button>
+      </div>
+    </section>
+
+    <section id="kontak" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h3>Kami siap membantu</h3>
+          <p>Email: support@sehatkita.id</p>
+          <p>Telepon: +62 812 3456 7890</p>
+          <p>Alamat: Jl. Sehat No. 10, Jakarta</p>
+        </div>
+        <form id="contact-form" class="card">
+          <label for="name">Nama</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" rows="4"></textarea>
+
+          <button type="submit" class="btn primary">Kirim Pesan</button>
+          <div class="result" id="contact-result"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 SehatKita. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
