@@ -33,13 +33,3 @@ Proyek ini dikembangkan berdasarkan spesifikasi desain dan alur pengguna berikut
 | :--- | :--- |
 | **User Flow (Alur Pengguna)** | [Link Flow Figma](https://www.figma.com/board/IVMc7BKyoyaxsAbkhYXaPP/Untitled?node-id=0-1&t=eWcTpdjYogkPQpRU-1) |
 | **Visual Design (Desain UI/UX)** | [Link Desain Figma](https://www.figma.com/design/QTFMv8wbc9B8cWFWFOHnBB/desain-web-uts?t=eWcTpdjYogkPQpRU-1) |
-
-***
-
-## ⚙️ Cara Menjalankan Proyek
-
-1.  **Kloning Repositori:**
-    ```bash
-    git clone [https://github.com/jafarabdul/uts-pemrograman-front-end.git](https://github.com/jafarabdul/uts-pemrograman-front-end.git)
-    ```
-2.  **Buka File:** Buka file `index.html` langsung menggunakan *browser* web apa pun.
